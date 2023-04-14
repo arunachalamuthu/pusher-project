@@ -11,7 +11,7 @@ const Chat = () => {
   const pusher = new Pusher("e248e83fcce2773cf872", {
     cluster: "ap2",
     // use jwts in prod
-    authEndpoint: `/api/detalis/auth`,
+    authEndpoint: `/api/detalis/auth/?name=muthu`,
     auth: { params: {username}}
   });
   console.log(pusher);

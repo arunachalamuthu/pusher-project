@@ -29,7 +29,7 @@ import { pusher } from "../../pusher/route.js";
 
 export async function POST(request){
  
-
+  console.log(request.url)
 //console.log(searchParams.get("socket_id"));
 
   const body = await request.text()
